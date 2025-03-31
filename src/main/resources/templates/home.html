@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" th:href="@{/style.css}"/>
     <title>Employee Web Application</title>
 </head>
 <body>
 <nav >
-    <a href=".">Système de gestion des employées</a>
+    <a href=".">Système de gestion des employés</a>
 </nav>
 
-    <h2>Liste des employées</h2>
+    <h1>Liste des employés</h1>
 
         <table class="table table-striped table-sm">
             <thead>
@@ -37,9 +37,8 @@
             </tr>
             </tbody>
         </table>
-<button
 
-    <h4><a th:href="@{/createEmployee}">Ajouter un nouvel employée</a></h4>
+    <a th:href="@{/createEmployee}"><button class="btn btn-info"> Ajouter un nouvel employé</button></a>
 
 </div>
 
